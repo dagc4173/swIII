@@ -1,28 +1,44 @@
+html{
+    background-color: aqua;
+}
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center; 
+    vertical-align: middle;
+    background-color: rgba(255, 174, 0, 0.589);
+    height: 50px;
+    color: black;
+}
 nav>li{
     font-size: x-large;
-    color: aqua;
+    line-height: 10%;
     float: left;
 }
-nav>li:hover{
+li:hover{
     cursor: pointer;
-    background-color: red;
+    background-color: rgb(112, 153, 15);
+    color: white;
 }
 nav{
     background-color: aquamarine;
     height: 50px;
+    text-align: center;
+    vertical-align: middle;   
 }
 form{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
 }
-h1{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+input{
+    position: relative; left: 300px;
 }
-li{ color: blue;
+label{
+    position: relative; left: 300px;
+}
+li{ font-style: italic, bold;
+    color: rgb(227, 227, 240);
     font-size: xx-large;
-    display: inline;                    
+    display: inline;    
+    list-style-position: inside;               
 }
-#li:hover{
-    color: aqua;
-    font-size: xx-large;
-}
+
 
