@@ -1,0 +1,28 @@
+nav>li{
+    font-size: x-large;
+    color: aqua;
+    float: left;
+}
+nav>li:hover{
+    cursor: pointer;
+    background-color: red;
+}
+nav{
+    background-color: aquamarine;
+    height: 50px;
+}
+form{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif 
+}
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+li{ color: blue;
+    font-size: xx-large;
+    display: inline;                    
+}
+#li:hover{
+    color: aqua;
+    font-size: xx-large;
+}
+
