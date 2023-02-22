@@ -1,17 +1,24 @@
 html{
     background-color: aqua;
 }
-h1{
+header{
+    display: inline;
+    vertical-align: middle;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center; 
-    vertical-align: middle;
+    
     background-color: rgba(255, 174, 0, 0.589);
     height: 50px;
-    color: black;
+    color: black;  
+    align-items: middle;
 }
+.image, .title {
+    display: inline-block;
+    vertical-align: middle;
+  }
 nav>li{
     font-size: x-large;
-    line-height: 10%;
+    line-height: 20%;
     float: left;
 }
 li:hover{
@@ -29,7 +36,7 @@ form{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
 }
 input{
-    position: relative; left: 300px;
+    position: relative; left: 310px;
 }
 label{
     position: relative; left: 300px;
@@ -37,7 +44,9 @@ label{
 li{ font-style: italic, bold;
     color: rgb(227, 227, 240);
     font-size: xx-large;
-    display: inline;    
+    display: inline; 
+    padding-left:10px;
+    padding-right:10px;   
     list-style-position: inside;               
 }
 
