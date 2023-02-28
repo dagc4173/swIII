@@ -5,15 +5,17 @@ body {
     color: #fff;
     margin: 0;
     padding: 0;
+    height: 100%;
 }
+
 /* Estilo del encabezado */
 header {
-    background-color: #ffc400;
-    color: #fff;
+    background: linear-gradient(rgb(255, 174, 0), yellow, yellow, yellow, rgb(255, 174, 0), red);
+    color: #000000;
     padding: 10px;
     text-align: center; 
 }
-.image, .title1, .title2 {
+.image, .title {
     display: inline-block;
     vertical-align: middle;
 }
@@ -33,11 +35,11 @@ nav ul li {
 }
 nav ul li a {
     font-size: 20px;
-    color: #3d3d3d;
+    color: #000000;
     text-decoration: none;
 }
 nav ul li a:hover {
-    color: #666;
+    color: #000000;
 }
 h1 {
     font-size: 36px;
@@ -50,32 +52,39 @@ h2 {
     font-size: 24px;
     margin: 0;
     padding: 10px 0;
+    text-align: center;
 }
 main {
     padding: 20px;
-  }
-  
-  section {
+    padding-bottom: 50px;
+    min-height: 100%;
+}
+section {
     max-width: 800px;
     margin: 0 auto;
     text-align: justify;
-  }
-  
-  h2 {
+}
+h2 {
     font-size: 28px;
     margin-bottom: 20px;
-  }
-  
-  img {
-    max-width: 100%;
+}
+img {
+    max-width: 60%;
     height: auto;
-    margin-bottom: 20px;
-  }
+    display: block;
+    margin: auto;
+}
+
   
-  /* Estilo del pie de página */
-  footer {
-    background-color: #fa0505;
+/* Estilo del pie de página */
+footer {
+    background-color: #6e0000;
     color: #fff;
-    padding: 10px;
+    padding: 1px;
     text-align: center;
-  }
+
+    position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}

@@ -57,56 +57,15 @@ h3 {
     padding: 10px 0;
 }
 
-/* Estilos para la sección */
-section {
-    padding: 20px;
-    position: relative;
-    text-align: center;
-}
-  
-#image1 {
-    margin:auto;
-    float: left;
-    max-width: 20%;
-}
-  
-p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-}
-  
-.comments {
-    margin-top: 20px;
-    padding: 5%;
-}
-  
-h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-  
-.comments ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-  
-.comments li {
-    margin: 5px 0;
-}
-  
-.comments a {
-    color: #222;
-    background-color: #ddd;
-    padding: 5px 10px;
-    border-radius: 10px;
-    text-decoration: none;
-}
-  
-.comments a:hover {
-    background-color: #aaa;
-    color: #fff;
+form{
+    position: relative; left: 20%;
+    padding-top: 2%;
+    padding-right: 20%;
+    padding-bottom: 20%;
+    padding-left: 20%;
+    
+    
+    
 }
 
 /* Estilo del pie de página */
