@@ -15,7 +15,7 @@ header {
     display: inline-block;
     vertical-align: middle;
   }
-nav {
+  nav {
     background-color: #fa0505;
     padding: 10px;
     text-align: center;
@@ -37,47 +37,8 @@ nav ul li a {
 nav ul li a:hover {
     color: #666;
 }
-section {
-    margin: 20px;
+
+form{
+    position: relative; left: 40%;
 }
-h1 {
-    font-size: 40px;
-    margin: 0;
-    padding: 10px 0;
-}
-h2 {
-    font-size: 24px;
-    margin: 0;
-    padding: 10px 0;
-}
-h3 {
-    font-size: 24px;
-    margin: 0;
-    padding: 10px 0;
-}
-img {
-    max-width: 100%;
-    height: auto;
-}
-.comments {
-    margin-top: 20px;
-}
-form {
-    margin-top: 20px;
-}
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-input[type="text"], textarea {
-    display: block;
-    margin-bottom: 10px;
-    padding: 5px;
-    width: 100%;
-}
-input[type="submit"] {
-    background-color: #3d3d3d;
-    border: none;
-    color: #fff;
-    padding: 10px 20px;
-}
+

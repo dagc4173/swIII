@@ -1,15 +1,24 @@
+/* Estilo global */
 body {
     font-family: Arial, sans-serif;
+    background-color: #250101;
+    color: #fff;
     margin: 0;
     padding: 0;
 }
+/* Estilo del encabezado */
 header {
-    background-color: #3d3d3d;
+    background-color: #ffc400;
     color: #fff;
-    padding: 20px;
+    padding: 10px;
+    text-align: center; 
+}
+.image, .title1, .title2 {
+    display: inline-block;
+    vertical-align: middle;
 }
 nav {
-    background-color: #e6d6b8;
+    background-color: #fa0505;
     padding: 10px;
     text-align: center;
 }
@@ -23,48 +32,50 @@ nav ul li {
     margin: 0 10px;
 }
 nav ul li a {
+    font-size: 20px;
     color: #3d3d3d;
     text-decoration: none;
 }
 nav ul li a:hover {
     color: #666;
 }
-section {
-    margin: 20px;
-}
 h1 {
     font-size: 36px;
     margin: 0;
     padding: 10px 0;
+
+/* Estilo del contenido principal */
 }
 h2 {
     font-size: 24px;
     margin: 0;
     padding: 10px 0;
 }
-img {
+main {
+    padding: 20px;
+  }
+  
+  section {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+  }
+  
+  h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  img {
     max-width: 100%;
     height: auto;
-}
-.comments {
-    margin-top: 20px;
-}
-form {
-    margin-top: 20px;
-}
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-input[type="text"], textarea {
-    display: block;
-    margin-bottom: 10px;
-    padding: 5px;
-    width: 100%;
-}
-input[type="submit"] {
-    background-color: #3d3d3d;
-    border: none;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo del pie de página */
+  footer {
+    background-color: #fa0505;
     color: #fff;
-    padding: 10px 20px;
-}
+    padding: 10px;
+    text-align: center;
+  }

@@ -1,63 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8" />
-        <title>Formulario</title>
-        <link rel="stylesheet" href="Estilos.css">    
-    </head>
-    <body> 
-        <header>
-            <div class="container" id="Logo">
-                <img src="Imagenes/Anubis1.png" alt="Logo Anubis" width="80" height="100" class="image"/>
-                <h1 class="title"> Formulario de contacto </h1>
+	<head>
+		<meta charset="utf-8" />
+		<title>Travesía por Duat</title>
+		<link rel="icon" href="Imagenes/BastetAnkh.ico">
+		<link rel="stylesheet" href="estilos.css">
+	</head>
+	<body>
+		<header>
+			<div class="container" id="Logo">
+                <img src="Imagenes/BastetAnkh.png" alt="Logo Anubis" width="20%" class="image"/>
+                <h1 class="title1">Travesía por Duat:</h1>
+				<h2 class="title2">El reino de Anubis.</h2>
             </div>
-            
-        </header>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">¿Quienes somos?</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-        <form action="https://testapi.omarcardona.com/" method="post">
-            <br><label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required><br><br>
-            
-            <label for="correo">Correo electrónico:</label>
-            <input type="email" id="correo" name="correo" required><br><br>
-            
-            <label for="url">URL:</label>
-            <input type="url" id="url" name="url" required><br><br>
-            
-            <label for="fecha">Fecha:</label>
-            <input type="date" id="fecha" name="fecha" required><br><br>
-            
-            <label for="tiempo">Tiempo:</label>
-            <input type="time" id="tiempo" name="tiempo" required><br><br>
-            
-            <label for="fecha_hora">Fecha y Hora:</label>
-            <input type="datetime-local" id="fecha_hora" name="fecha_hora" required><br><br>
-            
-            <label for="mes">Mes:</label>
-            <input type="month" id="mes" name="mes" required><br><br>
-            
-            <label for="semana">Semana:</label>
-            <input type="week" id="semana" name="semana" required><br><br>
-            
-            <label for="numero">Número (min -10 max 10):</label>
-            <input type="number" id="numero" name="numero" min="-10" max="10" required><br><br>
-            
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono" required><br><br>
-            
-            <label for="busqueda">Término de búsqueda:</label>
-            <input type="search" id="busqueda" name="busqueda" required><br><br>
-            
-            <label for="color">Color favorito:</label>
-            <input type="color" id="color" name="color" required><br><br>
-            
-            <input type="submit" value="Enviar">
-        </form>
-    </body>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="anubis.html">Anubis</a></li>
+				<li><a href="duat.html">El reino de los muertos Duat</a></li>
+				<li><a href="simbolos.html">Símbolos</a></li>
+				<li><a href="elJuicio.html">El Juicio en el Duat</a></li>
+			</ul>
+		</nav>
+		<section>
+			<h2>Anubis</h2>
+			<img src="Imagenes/Anubis1.png" alt="Anubis" width="10%" class="image1">
+			<p>Anubis es el dios egipcio de la muerte y el más conocido de los dioses del inframundo. Es el encargado de guiar a las almas de los muertos hacia el reino de los muertos, Duat.</p>
+			<div class="comments">
+				<h3>Comentarios sobre Anubis</h3>
+				<ul>
+					<li><a href="formulario.html">Contactenos</a> </li>
+				</ul>
+			</div>
+		</section>
+	</body>
 </html>
