@@ -28,14 +28,14 @@
         var now = new Date();
 
         // obtener los grados para cada mano
-        var hourDeg = now.getHours() * 30 + now.getMinutes() / 2; // 30 grados por hora, 0.5 grados por minuto
-        var minuteDeg = now.getMinutes() * 6; // 6 grados por minuto
-        var secondDeg = now.getSeconds() * 6; // 6 grados por segundo
+        var horaDeg = now.getHours() * 30 + now.getMinutes() / 2; // 30 grados por hora, 0.5 grados por minuto
+        var minutoDeg = now.getMinutes() * 6; // 6 grados por minuto
+        var segundoDeg = now.getSeconds() * 6; // 6 grados por segundo
 
         // actualizar la posición de las manecillas
-        document.querySelector('.hora').style.transform = 'rotate(' + hourDeg + 'deg)';
-        document.querySelector('.minuto').style.transform = 'rotate(' + minuteDeg + 'deg)';
-        document.querySelector('.segundo').style.transform = 'rotate(' + secondDeg + 'deg)';
+        document.querySelector('.hora').style.transform = 'rotate(' + horaDeg + 'deg)';
+        document.querySelector('.minuto').style.transform = 'rotate(' + minutoDeg + 'deg)';
+        document.querySelector('.segundo').style.transform = 'rotate(' + segundoDeg + 'deg)';
 
         // esperar un segundo antes de actualizar la posición de las manecillas nuevamente
         setTimeout(moveHands, 1000);
