@@ -1,8 +1,29 @@
-.clock {
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+header {
+  background: linear-gradient( rgb(255, 174, 0), yellow, yellow, rgb(255, 174, 0), red);
+  color: #000000;
+  padding: 30px;
+  text-align: center; 
+}
+h1 {
+  font-size: 40px;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.reloj {
     position: relative;
     width: 300px;
     height: 300px;
     margin: 50px auto;
+    background-color: #250101;
   }
   
   .dial {
