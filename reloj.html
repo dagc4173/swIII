@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj analógico</title>
+    <link rel="stylesheet" href="relos.css">
+</head>
+<body>
+    <div class="clock">
+        <div class="hand dial">
+            <img src="Reloj Insumos/clockFace.png" alt="dial 1">
+        </div>
+        <div class="hand hora">
+            <img src="Reloj Insumos/hourHand.png" alt="hora">
+        </div>
+        <div class="hand minuto">
+            <img src="Reloj Insumos/minuteHand.png" alt="minuto">
+        </div>
+        <div class="hand segundo">
+            <img src="Reloj Insumos/secondHand.png" alt="segundo">
+        </div>
+    </div>
+    <script>
+        function moveHands() {
+        // obtener la hora actual
+        var now = new Date();
+
+        // obtener los grados para cada mano
+        var hourDeg = now.getHours() * 30 + now.getMinutes() / 2; // 30 grados por hora, 0.5 grados por minuto
+        var minuteDeg = now.getMinutes() * 6; // 6 grados por minuto
+        var secondDeg = now.getSeconds() * 6; // 6 grados por segundo
+
+        // actualizar la posición de las manecillas
+        document.querySelector('.hora').style.transform = 'rotate(' + hourDeg + 'deg)';
+        document.querySelector('.minuto').style.transform = 'rotate(' + minuteDeg + 'deg)';
+        document.querySelector('.segundo').style.transform = 'rotate(' + secondDeg + 'deg)';
+
+        // esperar un segundo antes de actualizar la posición de las manecillas nuevamente
+        setTimeout(moveHands, 1000);
+        }
+
+        // iniciar la función para actualizar las manecillas del reloj
+        moveHands();
+    </script>
+</body>
+</html>
