@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var generado;
+        function main() {
+            generado = Math.floor(Math.random() * 100);
+        }
+
+        function adivinar(){
+           const txt = document.getElementById("txtNumero");
+           if (txt.value == generado) {
+                alert("Adivinaste el número");
+           }else{
+                alert("Sigue intentando");
+                txt.value = "";
+           }  
+        }
+        window.onload = main;
+    </script>
+</head>
+<body>
+    <div>
+        <tr>
+            <label for="txtNumero">Ingrese su texto:</label>
+            <input type="text" id="txtNumero" name="txtNumero">
+        </tr>
+        <tr>
+            <button onclick="adivinar()">adivinar</button>
+        </tr>
+    </div>
+</body>
+</html>

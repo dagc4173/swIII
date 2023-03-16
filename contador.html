@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> 
+        var valorActual = 0; 
+		function aumentar() {
+			valorActual++; 
+			document.getElementById("txtCont").innerHTML = valorActual;
+        }
+		function disminuir() {
+			valorActual--; 
+			document.getElementById("txtCont").innerHTML = valorActual; 
+        }
+
+        function main(){
+            const aument=document.getElementById("aument");
+            aument.addEventListener("click",aumentar)
+
+            const dismi=document.getElementById("dismi");
+            dismi.addEventListener("click",disminuir)
+        }
+        window.onload=main;
+    </script>
+    <style>
+        *{
+            margin: 0;
+
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vamos a contar</h1>
+    </header>
+    
+    <div class="botones">
+            <button id="aument">Aumentar</button>
+            <button id="dismi">Disminuir</button>  
+    </div>
+    <div class="text">
+        <label for="txtCont">Contador:</label>
+        <span  id="txtCont" >0</span>
+    </div>
+</body>
+</html>
